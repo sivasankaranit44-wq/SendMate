@@ -35,7 +35,7 @@ function App() {
     function send()
   {
     setstatus(true)
-    axios.post("http://localhost:5000/sendmails",{msg:msg,emailList:emailList})
+    axios.post("https://sendmate-5.onrender.com/sendmails",{msg:msg,emailList:emailList})
     .then(function(response)
     {
       if(response.data.success=== true)
